@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Carrois Gothic SC', sans-serif;*/
+    font-family: 'Bebas Neue', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    width: 100%;
+    background-color: rgb(30, 34, 170);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#app{
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+.unionLogo {
+    text-align: center;
+
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    opacity: 0.3; /* kan vara full opacity as well */
+}
+
+
+.arcadaLogo {
+    filter: opacity(0.3) drop-shadow(0 0 0 rgb(30, 34, 170));
+    max-width: 20%;
+    height: auto;
+    position: absolute;
+    top: 6%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.schedule {
+    background-color: white; 
+    /*opacity: 0.7;*/
+    padding: 20px; 
+    border-radius: 10px; 
+    width: 75%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    
+}
+    
+.classes {
+}
+
+.timeBar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.room {
+text-align: right;
+font-size: 20px;
+color: white;
+line-height: 1;
+margin: 0;
+
+}
+.course {
+text-align: center;
+font-size: 30px;
+line-height: 1;
+margin-bottom: 20px;
+margin-top: 10px;
+}
+
+.time{
+text-align: left;
+font-size: 20pt;
+padding-left: 0px;
+}
+
+.roomBox {
+    background-color: #aa1e23;
+    border-radius: 20%;
+    padding: 6px;
+    
+}
+
+.dateAndTime {
+    /*background-color: rgb(30, 34, 170);*/
+    color: white;
+    padding: 10px; 
+    border-radius: 0 0 10px 0; 
+    margin: 20px 0px 0px 40px;
+}
+
+.menu {
+    background-color: white;
+    /*opacity: 0.7;*/
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 450px;
+}
+
+
+.todayMenu {
+    text-align: center;
+    font-size: 60px;
+}
+
+.menuText {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    text-wrap: wrap;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    padding:0;
+    margin-left: 80px;
+    margin-top: 80px;
+    background-color: transparent; 
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-right: 80px;
+    margin-top: 80px;
+    padding: 0;
+    background-color: transparent; 
+
+}
+
+.classText {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px 20px 20px 20px;
+    text-wrap: wrap;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#flexprkl {
+    z-index:0;
+    pointer-events:none;
+    position:absolute;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+#clock {
+    font-size: 120px;
+    color: white;
+    line-height: 1;
+    padding-bottom: 20px;
+}
+#date {
+    font-size: 60px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+#rightButton {
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(30, 34, 170));
+    margin-right: 20px;
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+}
+
+#rightArrow {
+    height: 50px;
+    width: 50px;
+}
+
+#leftButton {
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(30, 34, 170));
+    margin-left: 20px;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+#leftArrow {
+    height: 50px;
+    width: 50px;
+
+}
+
+#rightArrow:hover {
+    filter: opacity(1) drop-shadow(0 0 0 rgb(30, 34, 170));
+    cursor: pointer;
+
+}
+
+#leftArrow:hover {
+    filter: opacity(1) drop-shadow(0 0 0 rgb(30, 34, 170));
+    cursor: pointer;
+}
+
+#toDo {
+    background-color: white;
+    /*opacity: 0.7;*/
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    position: absolute;
+    margin-left: 500px;
+    text-align: center;
+
+}
+
+#toDo h2 {
+    font-size: 60pt;
+
+}
+
+#toDo li {
+    font-size: 40pt;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    transition: 0.2s;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+li:hover {
+  background: #ddd;
+}
